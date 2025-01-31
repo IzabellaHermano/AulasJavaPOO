@@ -1,10 +1,10 @@
-package com.senai.aula01_introducao_poo.exemplos.pessoa;
+package com.senai.aula01_introducao_poo.exemplo01.pessoa;
 
 public class Pessoa {
     String nome;
     int idade;
     float altura;
-    String endereco;
+    Endereco endereco;
 
     public void falar(String frase){
         System.out.println(frase);
