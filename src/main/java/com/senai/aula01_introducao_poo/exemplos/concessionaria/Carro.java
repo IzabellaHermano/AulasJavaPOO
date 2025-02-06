@@ -9,7 +9,7 @@ public class Carro {
     int km;
     int valor;
 
-    public Carro(String marca, String modelo, String cor, int anoFabricacao, int km, int valor) {
+    public Carro(String marca, String modelo, String cor, int anoFabricacao, int km,int valor) {
         this.marca = marca;
         this.modelo = modelo;
         this.cor = cor;
@@ -41,7 +41,7 @@ public class Carro {
             valorFipe -= valorFipe  * 0.02;
         }
 
-        System.out.println("O carro %d esta custanto R$%f segundo a Tabela Fipe de 2025");
+        System.out.printf("O carro %s esta custanto R$%,.2f segundo a Tabela Fipe de 2025",modelo,valorFipe);
 
 
 
