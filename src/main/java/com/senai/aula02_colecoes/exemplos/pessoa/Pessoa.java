@@ -15,9 +15,6 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return "Pessoa{" +
-                "nome = '" + nome + '\'' +
-                ", idade = " + idade +
-                '}';
+        return "O nome da pessoa é "+nome+", e ela tem "+idade +" anos de idade";
     }
 }
