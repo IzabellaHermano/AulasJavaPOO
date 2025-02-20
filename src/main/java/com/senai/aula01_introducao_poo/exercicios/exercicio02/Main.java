@@ -72,7 +72,5 @@ public class Main {
             System.out.println("Aluno "+aluno04.nomeAluno+" Reprovado!");
         }
         System.out.println("\n---------------------------------------------------------------");
-
     }
-
 }
