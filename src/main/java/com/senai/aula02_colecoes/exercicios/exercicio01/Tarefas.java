@@ -9,12 +9,7 @@ public class Tarefas {
         this.nomeTarefa = nomeTarefa;
         this.statusConclusao = statusConclusao;
     }
-    public String getNomeTarefa (){
-        return nomeTarefa;
-    }
-    public boolean isStatusConclusao(){
-        return isStatusConclusao();
-    }
+
     public void tarefaConcluida (){
         this.statusConclusao = true;
     }
