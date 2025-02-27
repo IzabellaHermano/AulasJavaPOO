@@ -9,4 +9,13 @@ public class Produtos {
         this.nomeProduto = nomeProduto;
         this.qntProduto = qntProduto;
     }
+
+    public Produtos(int qntProduto) {
+        this.qntProduto = qntProduto;
+    }
+
+    @Override
+    public String toString() {
+        return ". Nome:" +nomeProduto+" | Quantidade: "+qntProduto +"\n" ;
+    }
 }
