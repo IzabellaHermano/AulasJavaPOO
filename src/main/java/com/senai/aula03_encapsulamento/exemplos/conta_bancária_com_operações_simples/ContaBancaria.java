@@ -45,6 +45,11 @@ public class ContaBancaria {
             System.out.println("Saldo insuficiente");
         }
     }
+    public void tranferir(double valor, ContaBancaria contaDestino){
+        this.sacar(valor);
+        contaDestino.depositar(valor);
+
+    }
 
     @Override
     public String toString() {
