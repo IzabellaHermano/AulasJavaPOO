@@ -50,7 +50,6 @@ public class ContaBancaria {
         contaDestino.depositar(valor);
 
     }
-
     @Override
     public String toString() {
         return "ContaBancaria{" +
