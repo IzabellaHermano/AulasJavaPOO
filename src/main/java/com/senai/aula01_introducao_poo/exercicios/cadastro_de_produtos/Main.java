@@ -1,4 +1,4 @@
-package com.senai.aula01_introducao_poo.exercicios.exercicio01;
+package com.senai.aula01_introducao_poo.exercicios.cadastro_de_produtos;
 
 import java.util.Scanner;
 

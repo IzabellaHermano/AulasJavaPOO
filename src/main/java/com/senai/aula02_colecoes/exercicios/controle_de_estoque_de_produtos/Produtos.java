@@ -1,4 +1,4 @@
-package com.senai.aula02_colecoes.exercicios.exercicio02;
+package com.senai.aula02_colecoes.exercicios.controle_de_estoque_de_produtos;
 
 public class Produtos {
 
