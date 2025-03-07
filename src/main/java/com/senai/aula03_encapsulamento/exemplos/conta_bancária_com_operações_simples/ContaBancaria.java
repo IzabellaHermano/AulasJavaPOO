@@ -27,27 +27,34 @@ public class ContaBancaria {
         return saldo;
     }
 
-    public void depositar(double valor){
+    public boolean depositar(double valor){
         if (valor>0){
             saldo += valor;
             System.out.println("Deposito realizado com sucesso do titular "+titular+"! \nSaldo Atual R$"+saldo);
+            return true;
 
         }else {
             System.out.println("Valor inválido! O valor precisa ser maior que zero");
+            return false;
         }
 
     }
-    public void sacar(double valor){
-        if (valor<= saldo){
+    public boolean sacar(double valor){
+        if (valor <= saldo && valor > 0){
             saldo -= valor;
             System.out.println("Saque realizado com sucesso do titular "+titular+"! \nSaldo Atual R$"+saldo);
+            return true;
         }else {
-            System.out.println("Saldo insuficiente");
+            System.out.println("Saldo insuficiente!");
+            return false;
         }
     }
     public void tranferir(double valor, ContaBancaria contaDestino){
-        this.sacar(valor);
-        contaDestino.depositar(valor);
+        if (this.sacar(valor)) {
+            contaDestino.depositar(valor);
+        }else {
+            System.out.println("Não é possivel relizar a transferencia.");
+        }
 
     }
     @Override
