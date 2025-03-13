@@ -2,7 +2,7 @@ package com.senai.aula04_heranca.exemplos.gerenciamento_conta_bancaria;
 
 public class ContaBancaria {
     private String titular;
-    private double saldo;
+    protected double saldo;
 
     public ContaBancaria(String titular, double saldo) {
         this.titular = titular;
