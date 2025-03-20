@@ -67,6 +67,6 @@ public class Funcionario {
         }
     }
     public void infFuncionarios(){
-        System.out.printf("|NOME: %s\n|CARGO: %s\n|SALÁRIO:%.2f\n", nome, cargo, salario);
+        System.out.printf("|NOME: %s\n|CARGO: %s\n|SALÁRIO: R$%.2f\n", nome, cargo, salario);
     }
 }
