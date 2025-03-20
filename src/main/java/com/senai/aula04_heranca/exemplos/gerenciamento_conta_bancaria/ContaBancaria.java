@@ -6,7 +6,12 @@ public class ContaBancaria {
 
     public ContaBancaria(String titular, double saldo) {
         this.titular = titular;
-        this.saldo = saldo;
+        if ( saldo>= 0) {
+            this.saldo = saldo;
+        }else {
+            System.out.println("O saldo inicial não pode ser negativo!");
+            System.out.println("O saldo da conta iniciará com R$0,00.");
+        }
     }
 
     public String getTitular() {
