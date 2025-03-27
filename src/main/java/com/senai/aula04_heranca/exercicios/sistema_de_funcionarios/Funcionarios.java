@@ -24,7 +24,7 @@ public class Funcionarios {
     public void setSalario(double salario) {
         this.salario = salario;
     }
-    public void exibirDadosProdutos(){
+    public void exibirDadosFuncionario(){
         System.out.printf("|NOME:%s\nSALÁRIO: R$%.2f",nome,salario);
     }
 }
