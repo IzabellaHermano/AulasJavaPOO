@@ -8,8 +8,12 @@ public class Professor extends Funcionarios{
         this.disciplina = disciplina;
     }
 
+    public String getDisciplina() {
+        return disciplina;
+    }
+
     @Override
     public void exibirDadosFuncionario() {
-        System.out.printf("\n-->PROFESSOR:\nNome:%s\nSalário:R$%.2f\nDisciplina:%s",getNome(),getSalario(),disciplina);
+        System.out.printf("\nNome:%s\nSalário:R$%.2f\nDisciplina:%s\n",getNome(),getSalario(),disciplina);
     }
 }
