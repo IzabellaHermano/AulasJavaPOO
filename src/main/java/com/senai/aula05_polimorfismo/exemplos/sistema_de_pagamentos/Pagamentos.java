@@ -6,7 +6,6 @@ public class Pagamentos {
     public Pagamentos(String nome) {
         this.nome = nome;
     }
-
     public String getNome() {
         return nome;
     }
