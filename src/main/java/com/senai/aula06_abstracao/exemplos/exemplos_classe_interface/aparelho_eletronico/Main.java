@@ -1,4 +1,4 @@
-package com.senai.aula06_abstracao.exemplos.exemplos_classe_abstrata.aparelhos_eletronico;
+package com.senai.aula06_abstracao.exemplos.exemplos_classe_interface.aparelho_eletronico;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class Main {
         testarAparelho(new Televisao());
 
     }
-    public static void testarAparelho(AparelhoEletronico aparelhoEletronico){
+    public static void testarAparelho( AparelhoEletronico aparelhoEletronico){
         System.out.println("---------TESTANDO APARELHOS---------");
         aparelhoEletronico.ligar();
         aparelhoEletronico.desligar();
