@@ -1,4 +1,4 @@
-package com.senai.aula06_abstracao.exemplos.exemplos_classe_abstrata.conta_bancaria;
+package com.senai.aula06_abstracao.exemplos.exemplos_classe_abstratacao.conta_bancaria;
 
 public class ContaCorrente extends ContaBancaria{
     public ContaCorrente(String titular, double saldo) {

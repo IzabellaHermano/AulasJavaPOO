@@ -1,7 +1,7 @@
-package com.senai.aula06_abstracao.exemplos.exemplos_classe_abstrata.conta_bancaria;
+package com.senai.aula06_abstracao.exemplos.exemplos_classe_abstratacao.conta_bancaria;
 
 public abstract class ContaBancaria {
-    private String titular;
+    protected String titular;
     protected double saldo;
 
     public ContaBancaria(String titular, double saldo) {

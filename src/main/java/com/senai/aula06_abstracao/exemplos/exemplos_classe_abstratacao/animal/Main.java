@@ -1,4 +1,4 @@
-package com.senai.aula06_abstracao.exemplos.exemplos_classe_abstrata.animal;
+package com.senai.aula06_abstracao.exemplos.exemplos_classe_abstratacao.animal;
 
 public class Main {
     public static void main(String[] args) {
