@@ -1,4 +1,4 @@
-package com.senai.aula06_abstracao.exemplos.exemplos_classe_abstratacao.gerenciamento_de_funcionarios;
+package com.senai.aula06_abstracao.exemplos.exemplos_classe_abstracao.gerenciamento_de_funcionarios;
 
 public class FuncionarioEfetivo extends  Funcionario{
     private double bonusMensal;

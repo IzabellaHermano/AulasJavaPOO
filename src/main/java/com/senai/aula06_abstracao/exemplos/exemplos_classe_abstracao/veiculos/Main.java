@@ -1,4 +1,4 @@
-package com.senai.aula06_abstracao.exemplos.exemplos_classe_abstratacao.veiculos;
+package com.senai.aula06_abstracao.exemplos.exemplos_classe_abstracao.veiculos;
 
 public class Main {
     public static void main(String[] args) {
