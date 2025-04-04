@@ -14,6 +14,6 @@ public abstract class Funcionario {
     public abstract double calcularBonus();
 
     public void exibirDados(){
-        System.out.printf("%s recebe R$%.2f",nome,salario);
+        System.out.printf("\n%s recebe R$%.2f\n",nome,salario);
     }
 }
