@@ -1,4 +1,4 @@
-package com.senai.aula06_abstracao.exemplos.exemplo_interface.controle_equipamentos_inteligentes;
+package com.senai.aula06_abstracao.exemplos.exemplos_classe_interface.controle_equipamentos_inteligentes;
 
 public class Main {
     public static void main(String[] args) {
