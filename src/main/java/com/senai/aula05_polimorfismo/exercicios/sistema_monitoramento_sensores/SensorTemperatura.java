@@ -1,7 +1,7 @@
 package com.senai.aula05_polimorfismo.exercicios.sistema_monitoramento_sensores;
 
 public class SensorTemperatura extends Sensor{
-    double valorTemp;
+   protected double valorTemp;
 
     public SensorTemperatura(double valorTemp) {
         this.valorTemp = valorTemp;
