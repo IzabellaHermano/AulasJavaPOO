@@ -13,5 +13,4 @@ public interface CheckinFlySafe {
     static void exibirMsgBoasVindas(){
         System.out.println("Bem-Vindo a Companhia Aerea FlySafe!");
     }
-
 }
