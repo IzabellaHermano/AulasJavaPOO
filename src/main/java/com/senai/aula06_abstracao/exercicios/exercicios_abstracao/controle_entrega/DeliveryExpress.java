@@ -10,10 +10,12 @@ public abstract class DeliveryExpress {
         this.capacidadeMaxCarga = capacidadeMaxCarga;
         this.distanciaParaDestino = distanciaParaDestino;
     }
+
     public abstract double calcularTempoEstimado();
+
     public void exibirDetalhes() {
-        System.out.println("|Velocidade Atual: " + velocidadeAtual+"KM");
-        System.out.println("|Capacidade Máxima de Carga: " + capacidadeMaxCarga+" Pedidos");
-        System.out.println("|Distância para o Destino: " + distanciaParaDestino+"KM");
+        System.out.println("|Velocidade Atual: " + velocidadeAtual + "KM");
+        System.out.println("|Capacidade Máxima de Carga: " + capacidadeMaxCarga + " Pedidos");
+        System.out.println("|Distância para o Destino: " + distanciaParaDestino + "KM");
     }
 }

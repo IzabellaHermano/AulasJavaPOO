@@ -1,6 +1,6 @@
 package com.senai.aula06_abstracao.exercicios.exercicios_abstracao.controle_entrega;
 
-public class BicicletaEntrega extends DeliveryExpress{
+public class BicicletaEntrega extends DeliveryExpress {
     public BicicletaEntrega(double velocidadeAtual, int capacidadeMaxCarga, double distanciaParaDestino) {
         super(velocidadeAtual, capacidadeMaxCarga, distanciaParaDestino);
     }
