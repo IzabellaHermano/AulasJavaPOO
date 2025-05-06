@@ -70,7 +70,7 @@ public class Main {
 
                 case 2:
                     if (escolhaTipo ==1)
-                        opController.listarOperadores().forEach(System.out::println);
+                        opController.listarOperdores().forEach(System.out::println);
 
                     else if (escolhaTipo == 2)
                         supController.listarSupervisores().forEach(System.out::println);
@@ -82,12 +82,12 @@ public class Main {
                     if(escolhaTipo == 1)
                         opController.deletarOperador(id);
                     else if ( escolhaTipo == 2)
-                        supController.deletarOperador(id);
+                        supController.deletarSupervisor(id);
                     break;
 
                 case 3:
                     if (escolhaTipo ==1)
-                        opController.listarOperadores().forEach(System.out::println);
+                        opController.listarOperdores().forEach(System.out::println);
 
                     else if (escolhaTipo == 2)
                         supController.listarSupervisores().forEach(System.out::println);
@@ -116,7 +116,7 @@ public class Main {
 
                 case 4:
                     if (escolhaTipo ==1)
-                        opController.listarOperadores().forEach(System.out::println);
+                        opController.listarOperdores().forEach(System.out::println);
 
                     else if (escolhaTipo == 2)
                         supController.listarSupervisores().forEach(System.out::println);
