@@ -27,17 +27,20 @@ public class Main {
                       |___________________________________|
                 """;
         int opcao;
+        int escolhaTipo=0;
 
         do {
             System.out.println(menu);
             opcao = scanner.nextInt();
             scanner.nextLine();
-            System.out.println("|Qual tipo de usuario?|");
-            System.out.println("|1 - Operador         |");
-            System.out.println("|2 - Supervisor       |");
-            int escolhaTipo = scanner.nextInt();
-            scanner.nextLine();
 
+            if (opcao > 0 && opcao < 7){
+                System.out.println("|Qual tipo de usuario?|");
+                System.out.println("|1 - Operador         |");
+                System.out.println("|2 - Supervisor       |");
+                escolhaTipo = scanner.nextInt();
+                scanner.nextLine();
+            }
             switch (opcao){
                 case 1 :
                     System.out.println("|Preencha os dados a seguir:|");
