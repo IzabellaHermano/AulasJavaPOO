@@ -15,14 +15,16 @@ public class Main {
 
         String menu =
                 """
-                        Menu:
-                            1 - Cadastrar usuario
-                            2 - Deletar
-                            3 - Atualizar
-                            4 - Exibir usuarios
-                            5 - Ligar máquinas
-                            6 - Demitir operador
-                            7 - Sair   
+                      ____________________________________
+                      |  Menu:                            |
+                      |     1 - Cadastrar usuario         | 
+                      |     2 - Deletar                   |
+                      |     3 - Atualizar                 |
+                      |     4 - Exibir usuarios           |
+                      |     5 - Ligar máquinas            |
+                      |     6 - Demitir operador          |
+                      |     7 - Sair                      |
+                      |___________________________________|
                 """;
         int opcao;
 
@@ -30,23 +32,23 @@ public class Main {
             System.out.println(menu);
             opcao = scanner.nextInt();
             scanner.nextLine();
-            System.out.println("Qual tipo de usuario?");
-            System.out.println("1 - Operador ");
-            System.out.println("2 - Supervisor");
+            System.out.println("|Qual tipo de usuario?|");
+            System.out.println("|1 - Operador         |");
+            System.out.println("|2 - Supervisor       |");
             int escolhaTipo = scanner.nextInt();
             scanner.nextLine();
 
             switch (opcao){
                 case 1 :
-                    System.out.println("Preencha os dados a seguir:");
-                    System.out.print("ID: ");
+                    System.out.println("|Preencha os dados a seguir:|");
+                    System.out.print("|ID: ");
                     int id=  scanner.nextInt();
                     scanner.nextLine();
-                    System.out.print("Nome:");
+                    System.out.print("|Nome:");
                     String nome = scanner.nextLine();
 
                     if (escolhaTipo == 1 ){
-                        System.out.print("Setor: ");
+                        System.out.print("|Setor: ");
                         String setor = scanner.nextLine();
                         Operador operador = new Operador(nome, id, setor);
                         if(opController.cadastrarOperador(operador)){
@@ -56,7 +58,7 @@ public class Main {
                             System.out.println("Não foi possivel cadastrar!");
                         }
                     } else if (escolhaTipo == 2) {
-                        System.out.print("Area:");
+                        System.out.print("|Area:");
                         String area = scanner.nextLine();
                         Supervisor supervisor = new Supervisor(nome, id, area);
                         if(supController.cadastrarSupervisor(supervisor)){
@@ -75,7 +77,7 @@ public class Main {
                     else if (escolhaTipo == 2)
                         supController.listarSupervisores().forEach(System.out::println);
 
-                    System.out.print("Escolha um usuario pelo id para deletar");
+                    System.out.print("|Escolha um usuario pelo id para deletar:");
                     id = scanner.nextInt();
                     scanner.nextLine();
 
@@ -92,21 +94,21 @@ public class Main {
                     else if (escolhaTipo == 2)
                         supController.listarSupervisores().forEach(System.out::println);
 
-                    System.out.print("Escolha um usuario pelo id para deletar");
+                    System.out.print("|Escolha um usuario pelo id para atualizar:");
                     id = scanner.nextInt();
                     scanner.nextLine();
-                    System.out.println("Atualize as seguintes informações:");
-                    System.out.print("Nome: ");
+                    System.out.println("|Atualize as seguintes informações|");
+                    System.out.print("|Nome: ");
                     nome = scanner.nextLine();
 
                     if (escolhaTipo == 1){
-                        System.out.print("Setor: ");
+                        System.out.print("|Setor: ");
                         String setor = scanner.nextLine();
                         Operador operador = new Operador(nome,id,setor);
                         opController.atualizarOperador(operador);
                     }
                     else if (escolhaTipo == 2 ){
-                        System.out.print("Area: ");
+                        System.out.print("|Area: ");
                         String area = scanner.nextLine();
                         Supervisor supervisor = new Supervisor( nome, id, area);
                         supController.atualizarSupervisor(supervisor);
@@ -133,7 +135,7 @@ public class Main {
                     scanner.close();
                     break;
                 default:
-                    System.out.println("Opção invalida!\nInsira uma opção válida: ");
+                    System.out.println("Opção invalida!\n|Insira uma opção válida: ");
             }
         }while (opcao != 7);
     }
